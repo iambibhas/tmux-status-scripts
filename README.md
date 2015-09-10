@@ -8,7 +8,7 @@ These are mostly based on [this article](https://github.com/nakkaya/nakkaya.com/
 How to use
 ---
 
-Clone this repository on your `$HOME` directory. Then put/replace this line in
+Clone this repository on your `$HOME` directory. Then put/replace these lines in
 your `~/.tmux.conf` -
 
     set -g status-right-length 100
