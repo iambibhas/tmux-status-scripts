@@ -14,6 +14,8 @@ your `~/.tmux.conf` -
     set -g status-right-length 100
     set -g status-right '#(~/.tmux-status-scripts/cpuload.sh)#(~/.tmux-status-scripts/cputemp.sh)#(~/.tmux-status-scripts/netload.sh wlan0)#(date +"%a %b %_d %I:%M:%S")'
 
-And run `tmux -u`.
+And run `tmux -u` -
 
 ![tmux status bar](http://i.imgur.com/BCUujiF.png)
+
+> tmux attempts to guess if the terminal is likely to support UTF-8 by checking the first of the LC_ALL, LC_CTYPE and LANG environment variables to be set for the string "UTF-8". This is not always correct: the `-u` flag explicitly informs tmux that UTF-8 is supported.
